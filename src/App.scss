@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap');
+$bcg-color:#292F36;
+$box-color:#E2E4F6;
+*{
+  box-sizing: border-box;
+/*// border:1px dashed black;*/
+/*// background-color:$bcg-color;*/
+}
+body{
+  background-color:$bcg-color;
+  overflow-x: hidden;
+}
+#all{
+  font-family:'Inter',sans-serif;
+  display:grid;
+  grid-template-columns:40% 60%;
+  column-gap:.2rem;
+  margin:10px auto;
+/*// background-color:$bcg-color;*/
+}
+.edi{
+  min-width:300px;
+  text-align:center;
+textarea{
+  width:80%;
+  height:70%;
+  border-radius:8px;
+  resize:none;
+  background-color:$box-color;
+ //overflow:hidden;
+}
+}
+.prev{
+  min-width:300px;
+#preview{
+  margin:auto;
+  background-color:$box-color;
+  padding:0 30px;
+// padding-top:-1rem;
+  width:80%;
+// background-color:yellow;
+  border-radius:5px;
+  border:1px solid black;
+img{
+  width:100%;
+}
+code{
+  background-color:white;
+  width:80%;
+  word-wrap: break-word;
+}
+}
+}
+
+.title{
+  text-align:center;
+  font-size:160%;
+  color:#4EA699;
+
+}
+footer{
+  color:$box-color;
+  //text-align:right;
+  //margin:auto;
+  width:100%;
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  display: inline;
+  margin: -100% -2% 3% -1%;
+}
+
+@media only screen and(max-width:600px){
+  #all{
+  // display: grid;
+  // grid-template-columns: 1fr 2fr;
+  // grid-auto-flow: row;
+  // display:flex;
+  // flex-direction:row;
+  // flex-wrap:wrap;
+    display:block;
+  }
+  .edi{
+    display:block;
+    width:100%;
+  // margin:0;
+  }
+  #editor{
+    height:20rem;
+    resize:both;
+    overflow: auto;
+  }
+
+  .prev{
+    display:block;
+    width:100%;
+    margin:0;
+  }
+  footer{
+    display: block;
+    writing-mode: horizontal-tb;
+    text-align:center;
+    width: 100%;
+    margin: unset;
+  }
+
+}
+
+textarea:focus{
+  box-shadow:0px 0px 10px 2px white;
+}
+
+#preview {
+  padding: 0 1rem;
+
+blockquote {
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+> p > code {
+  padding: 3px;
+}
+
+code {
+  background: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+pre {
+  display: block;
+  overflow: auto;
+  background: white;
+  padding: 5px;
+  line-height: 1.2;
+}
+
+h1 {
+  border-bottom: 2px solid $bcg-color;
+}
+
+h2 {
+  border-bottom: 1px solid $bcg-color;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 2px solid $bcg-color;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+}

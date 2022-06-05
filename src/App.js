@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import React, {Component} from 'react';
 import Preview from "./Preview";
 
@@ -16,19 +16,21 @@ class App extends Component{
   }
   render() {
     return (
-        <div id='all'>
-          <div className='container edi'>
-            <h3 className='title'>Editor</h3>
-            <textarea
-                id='editor'
-                value={this.state.input}
-                type='text'
-                onChange={this.handleChange.bind(this)}
-            ></textarea>
-          </div>
-          <Preview myinput={this.state.input}/>
+        <main>
+            <div id='all'>
+              <div className='container edi'>
+                <h3 className='title'>Editor</h3>
+                <textarea
+                    id='editor'
+                    value={this.state.input}
+                    type='text'
+                    onChange={this.handleChange.bind(this)}
+                ></textarea>
+              </div>
+              <Preview myinput={this.state.input}/>
+            </div>
           <footer>Coded by Giulia Passoni 2022</footer>
-        </div>
+        </main>
     );
   }
 }
