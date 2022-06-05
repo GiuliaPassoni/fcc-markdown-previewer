@@ -64,7 +64,8 @@ footer{
   //margin:auto;
   width:100%;
   writing-mode: vertical-rl;
-  text-orientation: sideways-right;
+  //text-orientation: sideways-right;
+  text-orientation: sideways;
   display: inline;
   margin: -100% -2% 3% -1%;
 }
@@ -102,7 +103,6 @@ footer{
     width: 100%;
     margin: unset;
   }
-
 }
 
 textarea:focus{
